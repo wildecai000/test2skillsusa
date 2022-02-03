@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Reigns&rdquo; Documentation by &ldquo;UXLiner&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Reigns&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 28/10/2016<br>
+					By: UXLiner<br>
+					Email: <a href="mailto:uxliner9@gmail.com">UXLiner</a>
+					<br>
+					<br><br><br><br><br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0"><strong>Hi! Thank you for purchasing my template.</strong><br>
+If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/UXLiner">here</a>. Thanks so much!<br><br>
+This file will teach you how to set up and use the “<span class="center">Reigns</span>” Theme. <br><br>
+
+Best regards,<br>
+<strong>UXLiner</strong></p>
+		  </div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#phpcode">PHP Code</a></li>
+		  <li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a Responsive HTML5 / CSS3 for Desktop, tablet, mobile phone…
+		All of the information within the main content area is nested within a div with an class of "container". 
+		The sidebar's content is within a div with an class of "content-right-sidebar". 
+		The general template structure is the same throughout the template. 
+		<br><br>
+		The html are commented well so you can easily make an update.</p>
+		
+		
+		<p>
+		<span class="added">&lt;!-- HEADER --&gt;</span><br><br>
+		
+		<span class="style1">Top area, display logo, navigation and slideshow. This navigation improves the css dropdown menu with animation. The navigation is nested within a div with an class of "menu", you can change the navigation by change the &lt;li&gt; url and text. This is similar for all pages. <br>
+		   <br>
+		  
+		  <strong>NAVIGATION MENU</strong><br>
+</span>
+<pre >&lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>                  &lt;li class=&quot;mega-menu active&quot;&gt;&lt;a href=&quot;#section1&quot; title=&quot;Home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li&gt;&lt;a href=&quot;#section2&quot; title=&quot;About us&quot;&gt;About us&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li&gt;&lt;a href=&quot;#section3&quot; title=&quot;Services&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li&gt;&lt;a href=&quot;#section4&quot; title=&quot;Clients&quot;&gt;Clients&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li&gt;&lt;a href=&quot;#section5&quot; title=&quot;Portfoli&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li&gt;&lt;a href=&quot;#section6&quot; title=&quot;Blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;right&quot;&gt;&lt;a href=&quot;#section7&quot; title=&quot;Contact&quot;&gt;Contact&lt;/a&gt; &lt;/li&gt;<br>                &lt;/ul&gt;</pre>
+
+      <strong>SLIDES CONTAINER</strong><br>
+
+      <br>
+      <span class="style1">This is the jquery slider and only used in the main page. The slider content is nested within a div with an class of "sliderContainer". You can change and update the slider images and text in this section. </span>
+		
+		</p>
+		
+		
+	<span class="added">&lt;!-- BEGIN CONTENT --&gt;</span><br>
+      <br>
+      <span class="style1">      All information of all pages content area is nested within a div with an id of "container" and the sidebar content is within a div with an id of "sidebar". <br>
+      
+      <pre >&lt;div id=&quot;section2&quot;&gt;<br>    &lt;div class=&quot;section-lg m-top10&quot;&gt;<br>      &lt;div class=&quot;container&quot;&gt;<br>        &lt;div class=&quot;row&quot;&gt;
+			Content here.....<br>   &lt;/div&gt;<br>&lt;/div&gt;<br>&lt;/div&gt;</pre>      
+      
+      <br>
+      </span><span class="added">&lt;!-- END OF  CONTENT --&gt;</span><br>
+      <br>
+
+      <br>
+
+      <span class="added">&lt;!-- BEGIN FOOTER --&gt;</span><br>
+
+      <br>
+      <span class="style1">Footer content here. </span><br>
+      <br>
+      <span class="added">&lt;!-- END OF FOOTER --&gt;</span><br><br>
+	  
+		
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>	#container a {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This "Reigns" theme uses 5 main CSS files:
+		
+	  <ul>
+		<li>bootstrap.min.css (boostrap)</li>
+        <li>screen.css (menu)</li>
+		<li>reset.css (reset.css)</li>
+        <li>style.css (theme style.css)</li>
+        <li>responsive-leyouts.css</li>
+        <li>simple-line-icons.css</li>
+        <li>font-awesome.min.css - We used for this Theme. You can use all icons of Font-Awesome here: http://fortawesome.github.io/Font-Awesome/icons/</li>
+		</ul>
+		
+		</p>
+
+		<p>I'm using three CSS files in this theme. The first one is a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+        
+       <p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>
+        
+        <p><strong>How to Use Diffrent Colors Themes</strong><br>
+        We are Providing 10 Predefined Colors for this Theme. If you want to use Diffrent Colors for this theme... Go to Header Section of "index.html" page. There you can find  the Commented code of the colors. You can just remove the comments witch color skin you want to use. (like this you can do rest of the pages as well).</p>
+		
+		<p>All the CSS is commented and separated in categories so it is really easy to find what you want.</p>
+
+<pre>	/* === HEADER Section === */
+        
+        
+		.site-wrapper {<br>    	background: #fff;<br>		margin: auto;<br>    	overflow: hidden;<br>    	width:100%;<br>		}
+         
+       .logo_holder {<br>		float: left;<br>		width: 100%;<br>		height: 64px;<br>		}<br>		/* Logo */<br>		.navbar-brand.logo {<br>		background: url(../images/logo.png) no-repeat left 19px;<br>		}
+
+
+	/* === BODY Section === */
+	
+        .container-fluid &gt; .navbar-collapse, .container-fluid &gt; .navbar-header, .container &gt; .navbar-collapse, .container &gt; .navbar-header {		margin:0;<br>		}<br>		.container, .container-fluid {<br>		padding-left:0;<br>		padding-right:0;<br>		}
+	
+	
+	/* === FOOTER === */
+	
+    	footer {<br>		width: 100%;<br>		float: left;<br>		padding:70px 0 30px 0;<br>		margin:0;<br>		color:#727272;<br>		}
+</pre>
+		
+<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>Any images that are placed within the blog section have 5px worth of padding and a light bluish background. If you would like to edit the display of these images, find the following section in the style sheet:</p>
+
+<pre>	#wrapper #blog img {
+		change styles here:
+	}
+</pre>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports three Javascript files.</p>
+		
+		<ol>
+			<li>Revolutionslider</li>
+			<li>Mega Menu</li>
+            <li>Portfolio</li>
+            <li>Animations</li>
+		</ol>
+		  
+		<ol>
+		
+		<li>
+		<strong>Slideshows:</strong> Each slideshow has some unique values you can set, like autorotation, and transition speed.<br><br>
+		[some Javascript goes here... ]
+	<br><br>
+	<strong>Slider Script</strong>
+	<br>
+	var tpj=jQuery; <br>
+var revapi4;<br>
+tpj(document).ready(function() {<br>
+if(tpj(&quot;#rev_slider_4_1&quot;).revolution == undefined){<br>
+revslider_showDoubleJqueryError(&quot;#rev_slider_4_1&quot;);<br>
+}else{<br>
+revapi4 = tpj(&quot;#rev_slider_4_1&quot;).show().revolution({<br>
+sliderType:&quot;standard&quot;,<br>
+jsFileLocation:&quot;js/revolution-slider/js/&quot;,<br>
+sliderLayout:&quot;fullwidth&quot;,<br>
+dottedOverlay:&quot;none&quot;,<br>
+delay:9000,<br>
+navigation: {<br>
+keyboardNavigation:&quot;off&quot;,<br>
+keyboard_direction: &quot;horizontal&quot;,<br>
+mouseScrollNavigation:&quot;off&quot;,<br>
+onHoverStop:&quot;off&quot;,<br>
+touch:{<br>
+touchenabled:&quot;on&quot;,<br>
+swipe_threshold: 75,<br>
+swipe_min_touches: 1,<br>
+swipe_direction: &quot;horizontal&quot;,<br>
+drag_block_vertical: false<br>
+}<br>
+,<br>
+arrows: {<br>
+style:&quot;zeus&quot;,<br>
+enable:true,<br>
+hide_onmobile:true,<br>
+hide_under:600,<br>
+hide_onleave:true,<br>
+hide_delay:200,<br>
+hide_delay_mobile:1200,<br>
+tmp:'&lt;div class=&quot;tp-title-wrap&quot;&gt;  	&lt;div class=&quot;tp-arr-imgholder&quot;&gt;&lt;/div&gt; &lt;/div&gt;',<br>
+left: {<br>
+h_align:&quot;left&quot;,<br>
+v_align:&quot;center&quot;,<br>
+h_offset:30,<br>
+v_offset:0<br>
+},<br>
+right: {<br>
+h_align:&quot;right&quot;,<br>
+v_align:&quot;center&quot;,<br>
+h_offset:30,<br>
+v_offset:0<br>
+}<br>
+}<br>
+,<br>
+bullets: {<br>
+enable:false,<br>
+hide_onmobile:true,<br>
+hide_under:600,<br>
+style:&quot;metis&quot;,<br>
+hide_onleave:true,<br>
+hide_delay:200,<br>
+hide_delay_mobile:1200,<br>
+direction:&quot;horizontal&quot;,<br>
+h_align:&quot;center&quot;,<br>
+v_align:&quot;bottom&quot;,<br>
+h_offset:0,<br>
+v_offset:30,<br>
+space:5,<br>
+tmp:'&lt;span class=&quot;tp-bullet-img-wrap&quot;&gt;  &lt;span class=&quot;tp-bullet-image&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tp-bullet-title&quot;&gt;{{title}}&lt;/span&gt;'<br>
+}<br>
+},<br>
+viewPort: {<br>
+enable:true,<br>
+outof:&quot;pause&quot;,<br>
+visible_area:&quot;80%&quot;<br>
+},<br>
+responsiveLevels:[1240,1024,778,480],<br>
+gridwidth:[1240,1024,778,480],<br>
+gridheight:[800,700,600,400],<br>
+lazyType:&quot;none&quot;,<br>
+parallax: {<br>
+type:&quot;mouse&quot;,<br>
+origo:&quot;slidercenter&quot;,<br>
+speed:2000,<br>
+levels:[2,3,4,5,6,7,12,16,10,50],<br>
+},<br>
+shadow:0,<br>
+spinner:&quot;off&quot;,<br>
+stopLoop:&quot;off&quot;,<br>
+stopAfterLoops:-1,<br>
+stopAtSlide:-1,<br>
+shuffle:&quot;off&quot;,<br>
+autoHeight:&quot;off&quot;,<br>
+hideThumbsOnMobile:&quot;off&quot;,<br>
+hideSliderAtLimit:0,<br>
+hideCaptionAtLimit:0,<br>
+hideAllCaptionAtLilmit:0,<br>
+debugMode:false,<br>
+fallbacks: {<br>
+simplifyAll:&quot;off&quot;,<br>
+nextSlideOnWindowFocus:&quot;off&quot;,<br>
+disableFocusListener:false,<br>
+}<br>
+});<br>
+}<br>
+});	/*ready*/<br>
+		  </li>
+		
+		</ol>
+        
+<hr>
+		
+		<h3 id="phpcode"><strong>D) PHP Code</strong> - <a href="#toc">top</a></h3>
+        
+        Php code used in the "demo-contacts.php" file. You can just change the email address in the line number 4.
+        
+    <pre>
+    
+    $name_of_your_site = &quot;<strong>yourcompanyname.com</strong>&quot;
+    $email_adress_reciever = &quot;<strong>UXLiner9@gmail.com</strong>&quot;
+    
+    </pre>
+
+		
+		<hr>
+		
+	  <h3 id="psdFiles"><strong>E) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>We've included 10 psd with this theme:</p>
+		
+			<ol>
+				<li>01_home.psd</li>
+                <li>02_home.psd</li>
+                <li>03_home.psd</li>
+                <li>04_home.psd</li>
+
+			</ol>
+		
+    <p>If you'd like to change the logo in the header, open "01_homepage.psd", make the necessary adjustments, and then save the file as "logo.jpg" or "logo.png". Do the same for the buttons.</p> 
+		
+		<p>With these psds you can even create your own unique “Reigns” skin.</p>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You add new fonts by adding them to your Fonts folder in your computers Control Panel or right click font file and "Install".</p>
+		
+		<p>Resources used:
+		
+		
+		<ul>
+<li>Fonts: – Google Fonts (Websafe fonts used)<br>
+http://www.google.com/webfonts (you can find the fonts by the name of the font)
+</li>
+
+<li>Icons used:<br>
+http://fortawesome.github.io/Font-Awesome/icons/
+<br>
+http://graphicburger.com/simple-line-icons-webfont/
+</li>
+
+<li>Images Used: (fotolia.com, pixabay.com, unsplash.com and shutterstock.com) All are royalty free images.<br>
+You should replace the images with your own images.
+		</ul>
+		
+		
+		<hr>
+		
+		<p>If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section. </p>
+		<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist.</p>
+	    <p>To keep in touch with my latest PSD and HTML templates make sure to check out <a href="http://themeforest.net/user/UXLiner">http://themeforest.net/user/UXLiner</a> frequently.
+	    
+		</p><p>Best regards,</p>
+
+	  <p class="append-bottom alt large"><strong>UXLiner</strong></p>
+	  <p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+
+</body>
+</html>
